@@ -1,7 +1,7 @@
 {
   "name": "Edge-Lazada马帮",
   "description": "空白流程",
-  "main": "Main.xaml",
+  "main": "UI 新设计体验_马帮 主要使用.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.12.3]",
     "UiPath.Mail.Activities": "[1.15.2]",
@@ -45,8 +45,20 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "91ab90de-6e90-4c3f-8667-3b90218c0da5",
+      "filePath": "UI 新设计体验_马帮 存在附件浏览器问题.xaml",
+      "uniqueId": "6ab28d56-505e-415d-b9b9-d42c0315db88",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "马帮旧版.xaml",
+      "uniqueId": "3735466c-ae76-4d19-909c-5e3da8512923",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UI 新设计体验_马帮 主要使用.xaml",
+      "uniqueId": "7f2f9899-fcc3-4dd2-a16d-bb39a6903c90",
       "input": [],
       "output": []
     }
