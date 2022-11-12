@@ -60,8 +60,8 @@
   <Sequence DisplayName="分配" sap:VirtualizedContainerService.HintSize="478,761" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="price1" />
-      <Variable x:TypeArguments="x:Int32" Name="num" />
-      <Variable x:TypeArguments="x:Int32" Name="price3" />
+      <Variable x:TypeArguments="x:Double" Name="num" />
+      <Variable x:TypeArguments="x:Double" Name="price3" />
       <Variable x:TypeArguments="x:Int32" Name="a" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -79,10 +79,10 @@
     </Assign>
     <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="436,61" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
-        <OutArgument x:TypeArguments="x:Int32">[num]</OutArgument>
+        <OutArgument x:TypeArguments="x:Double">[num]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">[integer.Parse(price1)]</InArgument>
+        <InArgument x:TypeArguments="x:Double">[Double.Parse(price1)]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:CommentOut DisplayName="注释掉" sap:VirtualizedContainerService.HintSize="436,231" sap2010:WorkflowViewState.IdRef="CommentOut_1">
@@ -106,10 +106,10 @@
     </ui:CommentOut>
     <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="436,61" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
-        <OutArgument x:TypeArguments="x:Int32">[price3]</OutArgument>
+        <OutArgument x:TypeArguments="x:Double">[price3]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">[num -1]</InArgument>
+        <InArgument x:TypeArguments="x:Double">[num -0.01]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="436,95" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[price3]" />
